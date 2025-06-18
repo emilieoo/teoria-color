@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teoría del Color</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4A148C;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      display: inline;
+      font-size: 1.8em;
+      vertical-align: middle;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .seccion {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4A148C;
+    }
+
+    .colores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .color {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .primario { background-color: red; }
+    .secundario { background-color: green; }
+    .terciario { background-color: orange; }
+
+    /* RESPONSIVE para pantallas pequeñas */
+    @media (max-width: 600px) {
+      header h1 {
+        display: block;
+        font-size: 1.4em;
+      }
+
+      .color {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3437/3437369.png" alt="Logo Teoría del Color">
+    <h1>Teoría del Color 🎨</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="seccion">
+      <h2>¿Qué es la teoría del color?</h2>
+      <p>La teoría del color es un conjunto de principios que explican cómo se combinan los colores y cómo se perciben. Se utiliza en arte, diseño, moda y más.</p>
+    </div>
+
+    <div class="seccion">
+      <h2>Colores Primarios</h2>
+      <p>Los colores primarios son rojo, azul y amarillo. No se pueden obtener mezclando otros colores.</p>
+      <div class="colores">
+        <div class="color primario">Rojo</div>
+        <div class="color" style="background-color: blue;">Azul</div>
+        <div class="color" style="background-color: yellow; color: #000;">Amarillo</div>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>Colores Secundarios</h2>
+      <p>Se obtienen al mezclar dos colores primarios: verde, naranja y violeta.</p>
+      <div class="colores">
+        <div class="color secundario">Verde</div>
+        <div class="color terciario">Naranja</div>
+        <div class="color" style="background-color: purple;">Violeta</div>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>Colores Terciarios</h2>
+      <p>Surgen de la mezcla entre un color primario y uno secundario.</p>
+      <div class="colores">
+        <div class="color" style="background-color: #ffcc00; color: #000;">Amarillo-naranja</div>
+        <div class="color" style="background-color: #009688;">Verde-azulado</div>
+        <div class="color" style="background-color: #993399;">Rojo-violeta</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
